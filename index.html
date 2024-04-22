@@ -21,7 +21,6 @@
             background: #222;
             color: #fff;
             font-family: Arial, sans-serif;
-            overflow: hidden;
         }
         .loader{
             position: relative;
@@ -118,21 +117,32 @@
             }
         }
         @font-face {
-            font-family: "Space";
-            src: url("techno1.ttf");
+            font-family: 'Space';
+            src: url("tristandemoregular-pkbwx.ttf");
         }
         .heading {
             position: absolute;
             bottom: 20px;
             text-align: center;
             width: 100%;
-            font-family: 'Space', sans-serif;
-            font-size: 50px;
-            font-weight: bold;
+            font-family: "Space", Arial, sans-serif;
+            font-size: 20px;
+           color: #fff;
+            
+            
+        }
+        .heading p{
+            font-size: 20px;
+            line-height: 4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
         }
 
         @media screen and (max-width: 768px) {
-            
+            .loader span {
+                width: 200px;
+                height: 200px;
+            }
             .heading {
                 bottom: 50px;
                 font-size: 40px;
@@ -140,10 +150,13 @@
         }
 
         @media screen and (max-width: 480px) {
-            
+            .loader span {
+                width: 150px;
+                height: 150px;
+            }
             .heading {
                 bottom: 30px;
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     </style>
@@ -159,6 +172,9 @@
         </div>
         <span><i></i></span>
     </div>
-    <div class="heading">We Are Launching The Website Soon</div>
+    <div class="heading">
+        <h3>TECH JITTERS 2.0</h3>
+        <p>Launching Soon</p>
+    </div>
 </body>
 </html>
